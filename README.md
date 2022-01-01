@@ -1,3 +1,3 @@
 i write low tier lua
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=crumbtoo)](https://github.com/anuraghazra/github-readme-stats)
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=crumbtoo&theme=react&show_icons=true&layout=compact&exclude_repo=augustin64.github.io" />
