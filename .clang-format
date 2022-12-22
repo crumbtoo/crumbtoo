@@ -1,0 +1,135 @@
+# GENERAL
+# gnu's style contrats heavily with mine; makes holes in my config obvious
+BasedOnStyle:					GNU
+Language:						Cpp
+ColumnLimit:					75 # width of a vim vsplit on my macbook
+AccessModifierOffset:			-2
+
+# ALIGNMENT
+AlignAfterOpenBracket:			DontAlign
+AlignArrayOfStructures:			Left
+AlignConsecutiveAssignments:	Consecutive
+AlignConsecutiveBitFields:		AcrossEmptyLinesAndComments
+AlignConsecutiveDeclarations:	None
+AlignConsecutiveMacros:			Consecutive
+AlignEscapedNewlines:			DontAlign
+AlignOperands:					Align
+AlignTrailingComments:			true
+PointerAlignment:				Right
+QualifierAlignment:				Leave
+ReferenceAlignment:				Right
+
+# ARGUMENTS AND PARAMETERS
+AllowAllArgumentsOnNextLine:				true
+AllowAllParametersOfDeclarationOnNextLine:	true
+BinPackArguments:							false
+BinPackParameters:							true
+
+# SHORT HANDLING
+AllowShortCaseLabelsOnASingleLine:		false
+AllowShortBlocksOnASingleLine:			false
+AllowShortEnumsOnASingleLine:			false
+AllowShortFunctionsOnASingleLine:		None
+AllowShortIfStatementsOnASingleLine:	Never
+AllowShortLambdasOnASingleLine:			Empty
+AllowShortLoopsOnASingleLine:			false
+
+# BREAKS
+BreakBeforeBinaryOperators:				true
+AlwaysBreakAfterReturnType:				None
+AlwaysBreakAfterDefinitionReturnType:	None
+AlwaysBreakBeforeMultilineStrings:		true
+AlwaysBreakTemplateDeclarations:		No
+BreakBeforeBinaryOperators:				All
+BreakBeforeConceptDeclarations:			true
+# BreakBeforeInlineASMColon:				Always
+BreakBeforeTernaryOperators:			true
+BreakConstructorInitializers:			BeforeColon
+BreakInheritanceList:					BeforeColon
+BreakStringLiterals:					true
+
+# BRACES
+BreakBeforeBraces:		Custom
+BraceWrapping:
+  AfterCaseLabel:			true
+  AfterClass:				true
+  AfterControlStatement:	Always
+  AfterEnum:				true
+  AfterFunction:			true
+  AfterNamespace:			true
+  # AfterObjCDeclaration:	true
+  AfterStruct:				true
+  AfterUnion:				true
+  AfterExternBlock:			true
+  BeforeCatch:				true
+  BeforeElse:				true
+  BeforeLambdaBody:			true
+  BeforeWhile:				false
+  IndentBraces:				false
+  SplitEmptyFunction:		true
+  SplitEmptyRecord:			true
+  SplitEmptyNamespace:		true
+Cpp11BracedListStyle:	false
+# InsertBraces:			false			# clang-format 15
+
+# INDENT
+IndentWidth:					4
+UseTab:							AlignWithSpaces
+IndentAccessModifiers:			false
+IndentCaseBlocks:				false
+IndentCaseLabels:				true
+IndentExternBlock:				AfterExternBlock
+IndentGotoLabels:				false
+IndentPPDirectives:				AfterHash
+# IndentRequiresClause:			true		# clang-format 15
+IndentWrappedFunctionNames:		false
+NamespaceIndentation:			All
+PPIndentWidth:					-1
+PackConstructorInitializers:	CurrentLine
+
+
+# SPACING
+BitFieldColonSpacing:				Both
+SpaceAfterCStyleCast:				false
+SpaceAfterLogicalNot:				false
+SpaceAfterTemplateKeyword:			false
+SpaceAroundPointerQualifiers:		Both
+SpaceBeforeAssignmentOperators:		true
+SpaceBeforeCaseColon:				false
+SpaceBeforeCpp11BracedList:			true
+SpaceBeforeCtorInitializerColon:	true
+SpaceBeforeInheritanceColon:		true
+SpaceBeforeParens:					Never
+SpaceBeforeRangeBasedForLoopColon:	false
+SpaceBeforeSquareBrackets:			false
+SpaceInEmptyBlock:					false
+SpaceInEmptyParentheses:			false
+SpacesBeforeTrailingComments:		1
+SpacesInAngles:						Never
+SpacesInCStyleCastParentheses:		false
+SpacesInConditionalStatement:		false
+SpacesInContainerLiterals:			false
+SpacesInLineCommentPrefix:
+  Minimum: 1
+  Maximum: -1
+SpacesInParentheses:				false
+SpacesInSquareBrackets:				false
+
+# MISC
+AttributeMacros: ['__capability', '__output', '__ununsed']
+# CommentPragmas:
+CompactNamespaces:					false
+# ConstructorInitializerIndentWidth: 4
+DeriveLineEnding:					true
+DerivePointerAlignment:				false
+EmptyLineAfterAccessModifier:		Leave
+EmptyLineBeforeAccessModifier:		Always
+JavaScriptQuotes:					Leave
+JavaScriptWrapImports:				true
+KeepEmptyLinesAtTheStartOfBlocks:	false
+MaxEmptyLinesToKeep:				3
+ReflowComments:						true
+SeparateDefinitionBlocks:			Always
+
+# PENALTIES
+# PenaltyReturnTypeOnItsOwnLine:	9999
